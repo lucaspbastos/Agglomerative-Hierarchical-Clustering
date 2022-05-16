@@ -13,14 +13,14 @@ Example: `python3 generatePoints.py set.txt 500`
 ## Remove Outliers
 Removes the outliers from a dataset text file and places into a new dataset text file with a distance based algorithm that finds and removes a specified fraction p of the points in the dataset that lie at a specified distance greater than D.
 
-Usage: `python3 removeOutliers.py [input dataset file name] [0 < p fraction of points < 1] [distance threshold D > 0]
+Usage: `python3 removeOutliers.py [input dataset file name] [0 < p fraction of points < 1] [distance threshold D > 0]`
 
 Example: `python3 removeOutliers.py set.txt 0.7 7`
 
 ## Agglomerative Hierarchical Clustering
 Clusters the points into a specified k-cluster count and a specified clustering distance measuring type.
 
-Usage: `python3 clusteringProj.py [input dataset file name] [k cluster count > 0] [cluster distance measuring type 0-4]
+Usage: `python3 clusteringProj.py [input dataset file name] [k cluster count > 0] [cluster distance measuring type 0-4]`
 
 Where cluster distance measuring types are: 1=min, 2=max, 3=avg, 4=center. Using the center measuring type typically yields the best Silhouette Coefficient.
 
